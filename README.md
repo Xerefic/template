@@ -1,2 +1,2 @@
-# template
+# Template
 PyTorch BoilerPlate
