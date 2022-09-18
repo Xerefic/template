@@ -19,18 +19,18 @@ def get_data(args):
 
     return (train_dataset, valid_dataset, test_dataset), weights
 
+class CreateDataset(torch.utils.data.Dataset):
+    def __init__(self, args):
+        self.data = None
+
+    def __getitem__(self, index):
+        return self.data[index]
+
+    def __len__(self):
+        return len(self.data)
+
 if __name__ == "__main__":
     args = TrainingArgs()
     data, weights = get_data(args)
 
     args.data = data
-
-    # trainloader = DataLoader(data[0], batch_size=32, shuffle=True)
-    # for i, data in enumerate(trainloader):
-    #     continue
-    # validloader = DataLoader(data[1], batch_size=32, shuffle=False)
-    # for i, data in enumerate(validloader):
-    #     continue
-    # testloader = DataLoader(data[2], batch_size=32, shuffle=False)
-    # for i, data in enumerate(testloader):
-    #     continue
