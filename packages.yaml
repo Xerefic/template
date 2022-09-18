@@ -1,0 +1,17 @@
+name: torch
+dependencies:
+  - python
+  - numpy
+  - pip
+  - pip:
+    - opencv-python
+    - Pillow
+    - matplotlib
+    - torch
+    - torchvision
+    - scikit-learn
+    - numpy
+    - scipy
+    - pandas
+    - pyprind
+    - gdown
