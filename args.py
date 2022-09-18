@@ -14,12 +14,15 @@ class TrainingArgs():
     output_size: int = 10
     image_size: int = 32
     channels: tuple = (16, 16, 16, 16, 16)
+    kernel_size: int = 3
+    stride: int = 1
+    padding: int = 1
     weights: torch.Tensor = None
-    architecture: str = 'DNN'
-
+    
+    architecture: str = 'Model'
     data: tuple = None
 
-    root_dir: str = './data/cifar-10'
+    root_dir: str = './data'
     checkpoint: str = './checkpoints'
     experiment: str = None
 
