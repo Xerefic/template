@@ -26,6 +26,7 @@ from typing import Union, List, Dict, Any, Optional, cast
 
 import torch
 import torchvision
+import torchmetrics
 
 from torchvision import transforms
 from torch.utils.data import DataLoader

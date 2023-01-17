@@ -9,6 +9,8 @@ dependencies:
     - matplotlib
     - torch
     - torchvision
+    - torchtext
+    - torchmetrics
     - scikit-learn
     - numpy
     - scipy
